@@ -11,7 +11,14 @@ namespace web_blog_project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSet1TableAdapters.TBL_HakkımdaTableAdapter hakkımdaTablosu = new DataSet1TableAdapters.TBL_HakkımdaTableAdapter();
+            TextBox1.Text = hakkımdaTablosu.HakkımdaListele()[0].AD;
+            TextBox2.Text = hakkımdaTablosu.HakkımdaListele()[0].SOYAD;
+            TextBox3.Text = hakkımdaTablosu.HakkımdaListele()[0].ADRES;
+            TextBox4.Text = hakkımdaTablosu.HakkımdaListele()[0].MAIL;
+            TextBox5.Text = hakkımdaTablosu.HakkımdaListele()[0].TELEFON;
+            TextBox6.Text = hakkımdaTablosu.HakkımdaListele()[0].KISANOT;
+            TextBox7.Text = hakkımdaTablosu.HakkımdaListele()[0].FOTOGRAF;
         }
     }
 }

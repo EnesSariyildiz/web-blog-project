@@ -31,7 +31,17 @@
                 <asp:TextBox ID="TextBox5" runat="server" CssClass="form-control"></asp:TextBox>
             </div>
             <br />
-            <asp:Button Text="Güncelle" runat="server" />
+            <div>
+                <asp:Label ID="Label6" runat="server" Text="Kısa Notunuz:"></asp:Label>
+                <asp:TextBox ID="TextBox6" runat="server" CssClass="form-control" Height="100px" TextMode="MultiLine"></asp:TextBox>
+            </div>
+            <br />
+            <div>
+                <asp:Label ID="Label7" runat="server" Text="Fotoğrafınız:"></asp:Label>
+                <asp:TextBox ID="TextBox7" runat="server" CssClass="form-control"></asp:TextBox>
+            </div>
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="Güncelle" CssClass="btn btn-success" />
 
         </div>
     </form>
