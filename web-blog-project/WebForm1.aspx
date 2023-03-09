@@ -167,9 +167,9 @@
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
             
             <div class="my-auto">
-                <h2 class="mb-5">Skills</h2>
+                <h2 class="mb-5">Yeteneklerim</h2>
 
-                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                <div class="subheading mb-3">Programlama Dilleri</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">
                         <i class="fab fa-html5"></i>
@@ -209,7 +209,7 @@
                     </li>
                 </ul>
 
-                <div class="subheading mb-3">Workflow</div>
+                <div class="subheading mb-3">İş akışı</div>
                 <ul class="fa-ul mb-0">
                     <li>
                         <i class="fa-li fa fa-check"></i>
