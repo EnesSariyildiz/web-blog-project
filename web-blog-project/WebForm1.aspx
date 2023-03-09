@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">Hakkında</a>
+                    <a class="nav-link js-scroll-trigger" href="#about">Hakkımda</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#experience">Deneyimler</a>
@@ -65,16 +65,21 @@
 
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div class="my-auto">
-                <h1 class="mb-0">Clarence
-           
-                    <span class="text-primary">Taylor</span>
+                <h1 class="mb-0">
+                    <asp:Label ID="Label1" runat="server" Text="ad"></asp:Label>
+
+                    <span class="text-primary">
+                        <asp:Label ID="Label2" runat="server" Text="soyad"></asp:Label></span>
                 </h1>
                 <div class="subheading mb-5">
-                    3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-           
-                    <a href="mailto:name@email.com">name@email.com</a>
+                    <asp:Label ID="Label3" runat="server" Text="adres"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="telefon"></asp:Label>
+
+                    <a href="mailto:name@email.com">
+                        <asp:Label ID="Label5" runat="server" Text="mail"></asp:Label></a>
                 </div>
-                <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                <p class="lead mb-5">
+                    <asp:Label ID="Label6" runat="server" Text="hakkımda"></asp:Label></p>
                 <div class="social-icons">
                     <a href="#">
                         <i class="fab fa-linkedin-in"></i>
@@ -85,8 +90,8 @@
                     <a href="#">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
-                        <i class="fab fa-facebook-f"></i>
+                     <a href="#">
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
