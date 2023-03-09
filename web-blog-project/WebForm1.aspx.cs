@@ -11,9 +11,20 @@ namespace web_blog_project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataSet1TableAdapters.TBL_HakkımdaTableAdapter dt = new DataSet1TableAdapters.TBL_HakkımdaTableAdapter();
-            Repeater1.DataSource = dt.HakkımdaListele();
+            DataSet1TableAdapters.TBL_HakkımdaTableAdapter hakkımdaTable = new DataSet1TableAdapters.TBL_HakkımdaTableAdapter();
+            //TableAdepter'ı burada veri tabanından oluşturduğumuz nesneyi okumak için kullanıyoruz.
+            Repeater1.DataSource = hakkımdaTable.HakkımdaListele();
             Repeater1.DataBind();
+
+            DataSet1TableAdapters.TBL_DeneyimTableAdapter deneyimTable = new DataSet1TableAdapters.TBL_DeneyimTableAdapter();
+            Repeater2.DataSource = deneyimTable.DeneyimListesi();
+            Repeater2.DataBind();
+
+            DataSet1TableAdapters.TBL_EgitimTableAdapter egitimTable = new DataSet1TableAdapters.TBL_EgitimTableAdapter();
+            Repeater3.DataSource = egitimTable.EgitimListele();
+            Repeater3.DataBind();
+            //Verileri sayfada görüntüler.
+            
         }
     }
 }
