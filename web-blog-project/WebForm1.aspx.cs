@@ -11,7 +11,9 @@ namespace web_blog_project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataSet1TableAdapters.TBL_HakkımdaTableAdapter dt = new DataSet1TableAdapters.TBL_HakkımdaTableAdapter();
+            Repeater1.DataSource = dt.HakkımdaListele();
+            Repeater1.DataBind();
         }
     }
 }

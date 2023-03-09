@@ -64,37 +64,43 @@
     <div class="container-fluid p-0">
 
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-            <div class="my-auto">
-                <h1 class="mb-0">
-                    <asp:Label ID="Label1" runat="server" Text="ad"></asp:Label>
+            <asp:Repeater ID="Repeater1" runat="server">
+                <ItemTemplate>
+                <div class="my-auto">
+                    <h1 class="mb-0">
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("AD") %>'></asp:Label>
+                        <!--Veri tabanından hangi veri çekilecekse o veriyi "Eval()" metodunu içerisine yazıyoruz.-->
 
-                    <span class="text-primary">
-                        <asp:Label ID="Label2" runat="server" Text="soyad"></asp:Label></span>
-                </h1>
-                <div class="subheading mb-5">
-                    <asp:Label ID="Label3" runat="server" Text="adres"></asp:Label>
-                    <asp:Label ID="Label4" runat="server" Text="telefon"></asp:Label>
+                        <span class="text-primary">
+                            <asp:Label ID="Label2" runat="server" Text='<%# Eval("SOYAD") %>'></asp:Label></span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        <asp:Label ID="Label3" runat="server" Text='<%# Eval("ADRES") %>'></asp:Label>
+                        <asp:Label ID="Label4" runat="server" Text='<%# Eval("TELEFON") %>'></asp:Label>
 
-                    <a href="mailto:name@email.com">
-                        <asp:Label ID="Label5" runat="server" Text="mail"></asp:Label></a>
+                        <a href="#">
+                            <asp:Label ID="Label5" runat="server" Text='<%# Eval("MAIL") %>'></asp:Label></a>
+                    </div>
+                    <p class="lead mb-5">
+                        <asp:Label ID="Label6" runat="server" Text='<%# Eval("KISANOT") %>'></asp:Label>
+                    </p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
-                <p class="lead mb-5">
-                    <asp:Label ID="Label6" runat="server" Text="hakkımda"></asp:Label></p>
-                <div class="social-icons">
-                    <a href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                     <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
+                    </ItemTemplate>
+            </asp:Repeater>
         </section>
 
         <hr class="m-0">
