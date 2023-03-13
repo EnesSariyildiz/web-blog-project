@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminDeneyimEkle.aspx" />
+    <Content Include="AdminDeneyimler.aspx" />
     <Content Include="adminFolders\bootstrap-3.3.7\.gitattributes" />
     <Content Include="adminFolders\bootstrap-3.3.7\.gitignore" />
     <Content Include="adminFolders\bootstrap-3.3.7\dist\css\bootstrap-theme.css" />
@@ -1741,6 +1743,20 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminDeneyimEkle.aspx.cs">
+      <DependentUpon>AdminDeneyimEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDeneyimEkle.aspx.designer.cs">
+      <DependentUpon>AdminDeneyimEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDeneyimler.aspx.cs">
+      <DependentUpon>AdminDeneyimler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDeneyimler.aspx.designer.cs">
+      <DependentUpon>AdminDeneyimler.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
